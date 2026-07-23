@@ -1,20 +1,53 @@
 aid: acorn-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/acorn-systems.png
 name: acorn systems
-description: acorn systems is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Acorn is a Time-Driven Activity-Based Costing (TD-ABC) and profitability-management
+  platform for multi-dimensional cost-to-serve analysis, precisely attributing direct
+  and indirect costs against products, customers, regions, business units and facilities.
+  It offers what-if scenario modeling, shared-services optimization, custom business-process
+  modeling, and OLAP/analytics for pricing, supplier negotiation and supply-chain decisions.
+  Originally Acorn Systems, the product is now owned and operated by IgniteTech (an
+  ESW Capital enterprise-software company); the acornsys.com domain 301-redirects into
+  IgniteTech's software library. No public API, developer portal, SDK, or machine-readable
+  specification is published for the product.
 url: https://raw.githubusercontent.com/api-evangelist/acorn-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
+x-acquired-by: ignitetech
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-product-no-api-surface
+x-enrichment-note: >-
+  Enrichment SEARCH (2026-07-17) found no developer surface. www.acornsys.com 301-redirects
+  to https://ignitetech.ai/software-library/acorn/. Probed /.well-known/security.txt and
+  /openapi.json on both hosts: acornsys.com returns HTTP 200 but bodies are WordPress
+  soft-404 catch-all HTML (no real artifacts); ignitetech.ai returns 404. No OpenAPI,
+  AsyncAPI, GraphQL, packages, MCP, or Acorn-specific llms.txt exist. Nothing to score.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Profitability Management
+- Activity-Based Costing
+- Cost Management
+- Analytics
+- Enterprise Software
+- Finance
+- IgniteTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +57,10 @@ maintainers:
 common:
 - type: Website
   url: http://www.acornsys.com/
+- type: ProductPage
+  url: https://ignitetech.ai/software-library/acorn/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
