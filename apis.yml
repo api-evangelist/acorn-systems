@@ -36,7 +36,7 @@ x-enrichment-note: >-
   /openapi.json on both hosts: acornsys.com returns HTTP 200 but bodies are WordPress
   soft-404 catch-all HTML (no real artifacts); ignitetech.ai returns 404. No OpenAPI,
   AsyncAPI, GraphQL, packages, MCP, or Acorn-specific llms.txt exist. Nothing to score.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
